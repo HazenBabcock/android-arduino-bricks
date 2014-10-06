@@ -12,7 +12,7 @@ Code for Arduino and Android Bluetooth LEGO(R) control.
 * 2x Adafruit stacking header, part 85.
 
 ### Assembly Notes ###
-1. Power functions cords are cut to make the connectors.
+1. Power functions extension cords are cut to make the connectors.
 2. Input from the power functions 9V battery pack goes to Vin of the bottom board.
 3. Both boards have the Vin jumper installed.
 4. The top board has had it's address jumper soldered for address 0x61.
@@ -23,6 +23,9 @@ Code for Arduino and Android Bluetooth LEGO(R) control.
 * BtMotorControl - Arduino sketch that pairs with BtC.
 * CAD - OpenSCAD drawings.
 * images - Pictures of the project.
+
+### Issues ###
+The combination of 4 Arduino boards is on the large side. The assembled and boxed controller is 13L x 8W x 7H bricks.
 
 ### Disclaimer ###
 LEGO(R) is a trademark of The LEGO Group of companies which does not sponsor, authorize or endorse this repository.
