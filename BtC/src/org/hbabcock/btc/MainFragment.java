@@ -20,6 +20,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+/* 
+ * To modify this for a different project you will need to do at least the following:
+ * 
+ * 1. Layout the controls you want in main_fragment.xml.
+ * 2. Add class variables to MainFragment for each of the controls.
+ * 3. Update enableUI().
+ * 4. Update onCreateView().
+ */
 public class MainFragment extends Fragment {
 	
     // Message types sent from the BluetoothIO Handler
@@ -38,6 +46,7 @@ public class MainFragment extends Fragment {
     private BluetoothAdapter mBluetoothAdapter = null;
     private BluetoothIO mBluetoothIO = null;
 
+    // Controls to use in the UI.
     private VerticalSingleMotorSlider mRotate = null;
     private DualMotorRotated mTracks = null;
     private DualMotorNormal mArm = null;
@@ -63,6 +72,8 @@ public class MainFragment extends Fragment {
     };
 
     private void enableUI(boolean connected){
+    	
+    	// Controls to enable/disable when Bluetooth starts/stops.
     	if (connected){
     		mRotate.setEnabled(true);
     		mTracks.setEnabled(true);
@@ -122,9 +133,16 @@ public class MainFragment extends Fragment {
 
 		mView = inflater.inflate(R.layout.main_fragment, parent, false);
 
-    	mArm = (DualMotorNormal)mView.findViewById(R.id.arm);
-    	mGripper = (DualMotorNormal)mView.findViewById(R.id.gripper);
-
+		//
+		// Initialize UI control elements & configure them as necessary to control
+		// the appropriate motor(s).
+		//
+		// For single motor sliders:
+		//   configure(motorId, direction) 
+		//
+		// For joystick/touchpad:
+		//   configure(motorId1, direction1, motorId2, direction2)
+		//
     	mRotate = (VerticalSingleMotorSlider)mView.findViewById(R.id.rotate);
     	mRotate.configure(3, 0);
     	mRotate.setOnTouchListener(new View.OnTouchListener() {
