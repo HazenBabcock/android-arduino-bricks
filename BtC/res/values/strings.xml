@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BtC</string>
+    <string name="action_settings">Settings</string>
+
+    <!--  Setting Menu -->
+    <string name="action_connect">Connect</string>
+   	<string name="action_disconnect">Disconnect</string>
+   	
+    <!--  DeviceListActivity -->
+   	<string name="button_scan">Scan for devices</string>
+   	<string name="none_found">No devices found</string>
+   	<string name="none_paired">No devices have been paired</string>
+   	<string name="scanning">Scanning for devices</string>
+   	<string name="select_device">Select a device to connect</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+
+    <!-- Sliders -->
+   	<string name="h_slider">Horizontal Slider</string>
+
+   	<string name="rotate">rotate</string>
+   	<string name="tracks">tracks</string>
+   	<string name="arm">arm</string>
+   	<string name="gripper">gripper</string>
+   		   	
+</resources>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:orientation="horizontal"	
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+    	android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+   		android:orientation="vertical">
+   		
+	   	<org.hbabcock.btc.VerticalSingleMotorSlider
+            android:id="@+id/rotate"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/rotate" />
+   	</LinearLayout>
+
+    <LinearLayout
+    	android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+   		android:orientation="vertical">
+   		
+	   	<org.hbabcock.btc.DualMotorRotated
+            android:id="@+id/tracks"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:contentDescription="@string/tracks" />
+
+	   	<org.hbabcock.btc.DualMotorNormal
+            android:id="@+id/arm"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:contentDescription="@string/arm" />
+
+	   	<org.hbabcock.btc.DualMotorNormal
+            android:id="@+id/gripper"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:contentDescription="@string/gripper" />
+	   		   		   		   	
+	</LinearLayout>
+</LinearLayout>
