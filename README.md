@@ -19,14 +19,10 @@ Code for Arduino and Android Bluetooth LEGO(R) control.
 5. The Bluefruit is operating in direct mode.
 
 ### Directory Layout ###
-
-BtC - Android control app.
-
-BtMotorControl - Arduino sketch that pairs with BtC.
-
-CAD - OpenSCAD drawings.
-
-images - Pictures of the project.
+* BtC - Android control app.
+* BtMotorControl - Arduino sketch that pairs with BtC.
+* CAD - OpenSCAD drawings.
+* images - Pictures of the project.
 
 ### Disclaimer ###
 LEGO(R) is a trademark of The LEGO Group of companies which does not sponsor, authorize or endorse this repository.
