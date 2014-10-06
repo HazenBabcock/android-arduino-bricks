@@ -2,6 +2,7 @@
 Code for Arduino and Android Bluetooth LEGO(R) control.
 
 ![Image of Arduino](images/arduino1.png)
+![Image of Arduino](images/arduino2.png)
 
 ### Parts ###
 * 1x Arduino Uno, I bought part 68 (the starter kit).
