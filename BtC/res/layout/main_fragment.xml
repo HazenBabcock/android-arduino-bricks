@@ -17,11 +17,33 @@
 	   	<org.hbabcock.btc.VerticalSingleMotorSlider
             android:id="@+id/rotate"
             android:layout_width="32dp"
-            android:layout_height="match_parent"
+            android:layout_height="170dp"
             android:contentDescription="@string/rotate" />
-   	</LinearLayout>
+	   	
+	   	<!--  filler
+	   	<View
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
+ -->            
+    </LinearLayout>
+    
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+	<LinearLayout
     	android:layout_width="wrap_content"
 	    android:layout_height="match_parent"
    		android:orientation="vertical">
