@@ -21,7 +21,7 @@ public class DualMotorNormal extends DualMotorView {
     	// draw cross
     	mPaintLine.setColor(mColorForeground);
     	canvas.drawLine((float)mCenterX, (float)0, (float)mCenterX, (float)mHeight, mPaintLine);
-    	canvas.drawLine((float)0, (float)mCenterY, (float)0, (float)mCenterY, mPaintLine);
+    	canvas.drawLine((float)0, (float)mCenterY, (float)mWidth, (float)mCenterY, mPaintLine);
 
     	if(mEnabled){
     		mPaintLine.setColor(mColorEnabled);
